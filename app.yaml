@@ -25,6 +25,9 @@ resources:
   cpu: 1
   memory_gb: 1
   disk_size_gb: 10
+network:
+  name: teste-rede
+  subnetwork_name: subnet-brazil
   
 # [END gae_flex_quickstart_yaml_v1]
 
