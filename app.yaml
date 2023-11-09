@@ -1,10 +1,9 @@
-# Copyright 2023 Google LLC
-#
+# Copyright 2017, Google, Inc.
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+#    http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS,
@@ -12,9 +11,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# [START gae_flex_quickstart_yaml]
+# [START gae_flex_quickstart_yaml_v1]
 runtime: nodejs
 env: flex
+
 # This sample incurs costs to run on the App Engine flexible environment.
 # The settings below are to reduce costs during testing and are not appropriate
 # for production use. For more information, see:
@@ -28,5 +28,7 @@ resources:
 network:
   name: teste-rede
   subnetwork_name: subnet-brazil
+  
+# [END gae_flex_quickstart_yaml_v1]
 
-# [END gae_flex_quickstart_yaml]
+
