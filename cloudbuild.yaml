@@ -45,7 +45,7 @@ steps:
   args: ['-c', 'gcloud config set app/cloud_build_timeout 1600 && gcloud app deploy']
   volumes:
     - name: 'dist'
-      path: 'dist/**/*'
+      path: '/dist'
 
     - name: 'package.json'
       path: 'package.json'
@@ -54,10 +54,10 @@ steps:
       path: 'package-lock.json'
 
     - name: 'node_modules'
-      path: 'node_modules/**/*'
+      path: '/node_modules'
 
     - name: 'assets'
-      path: 'assets/**/*'
+      path: '/assets'
 options:
   logging: CLOUD_LOGGING_ONLY
 timeout: '1600s'
