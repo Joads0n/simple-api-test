@@ -44,7 +44,7 @@ steps:
   entrypoint: 'bash'
   args: ['-c', 'gcloud config set app/cloud_build_timeout 1600 && gcloud app deploy']
   volumes:
-    - name: 'dist/'
+    - name: 'dist'
       path: 'dist/**/*'
 
     - name: 'package.json'
