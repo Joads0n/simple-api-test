@@ -48,10 +48,10 @@ steps:
       path: '/dist'
 
     - name: 'package.json'
-      path: 'package.json'
+      path: '/package.json'
 
     - name: 'package-lock.json'
-      path: 'package-lock.json'
+      path: '/package-lock.json'
 
     - name: 'node_modules'
       path: '/node_modules'
